@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="TERRYN Arnaud">
+
+        <title>ICBig</title>
+
+        <link rel="stylesheet" href="./css/design.css">
+        <link rel="stylesheet" href="./css/mobile.css">
+    </head>
+
+
+    <body>
+        <div id="cookie-banner">
+            <p>ICBig utilise des cookies aux fins de fournir ses services et proposer des publicités personnalisées. En utilisant le site, vous consentez à cette utilisation selon les odalités décrites dans notre <a href="#">Charte Cookies</a>.</p>
+            <span class="close">&Cross;</span>
+        </div>
+
+        <header>
+            <div class="logo">
+                <img src="./img/logo-icbig.png" alt="logo-icbig">
+            </div>
+            <div class="ad">
+                <img src="./img/hhxMhkG.jpg" alt="ad-got">
+            </div>
+            <div class="menu">
+                <ul class="nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#dowload-now">Download Now</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <form id="search-form" method="GET">
+                    <input type="text" name="search" placeholder="Entrez le nom du jeu ici" onfocus="changeText(this,'blablabla','')" onblur="changeText(this,'','blablabla')">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+        </header>
+
+        <main>
+            <section id="categories">
+                <h1 class="box-title">Categories</h1>
+
+                <ul class="sidenav">
+                    <li><a href="#movies">
+                        <img src="./img/movie.png" alt="movies-icon">
+                        <span>Movies</span>
+                    </a></li>
+                    <li><a href="#music">
+                        <img src="./img/music.png" alt="music-icon">
+                        <span>Music</span>
+                    </a></li>
+                    <li>
+                        <a href="#games">
+                            <img src="./img/game.png" alt="games-icon">
+                            <span>Games</span>
+                        </a>
+                        <ul class="sub-nav">
+                            <li><a href="#puzzles">Puzzles</a></li>
+                            <li class="selected"><a href="#cards">Cards</a></li>
+                            <li><a href="#mazes">Mazes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#shows">
+                        <img src="./img/show.png" alt="shows-icon">
+                        <span>Shows</span>
+                    </a></li>
+                    <li><a href="#software">
+                        <img src="./img/software.png" alt="software-icon">
+                        <span>Software</span>
+                    </a></li>
+                    <li><a href="#ebooks">
+                        <img src="./img/ebook.png" alt="ebooks-icon">
+                        <span>Ebooks</span>
+                    </a></li>
+                    <li><a href="#faq">
+                        <img src="./img/faq.png" alt="faq-icon">
+                        <span>FAQ</span>
+                    </a></li>
+                    <li><a href="#signup">
+                        <img src="./img/signup.png" alt="signup-icon">
+                        <span>Sign Up</span>
+                    </a></li>
+                </ul>
+            </section>
+
+            <section id="testimonials">
+                <h1 class="box-title">Testimonials</h1>
+
+                <div class="testimony">
+                    <p>"Super! On trouve vraiment de tous dans ce site. Et les explications sont très claires"</p>
+                    <span>Julie Detras,BE</span>
+                </div>
+                <div class="testimony">
+                    <p>"Time for me to chose the best solutions to my problems! Thanks"</p>
+                    <span>Mike Powell,UK</span>
+                </div>
+            </section>
+
+            <section id="statistics">
+                <h1 class="box-title">Statistics</h1>
+                <ul id="breadcrumb">
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#cards">Cards</a></li>
+                    <li>Inscription</li>
+                </ul>
+
+                <form id="signin-form" method="POST">
+                    <fieldset>
+                        <div class="signin-info">
+                            <img src="./img/keys.png" alt="keys">
+                            <h1>Formulaire d'inscription</h1>
+                            <p>
+                                Vous devez vous inscrire pour commencer à jouer. L'inscription est <span class="bold italic">rapide et gratuite</span>.
+                            </p>
+                            <p>
+                                Vous êtes déjà membre? <a href="#connect">Se connecter</a>
+                            </p>
+                        </div>
+
+                        <div class="signin-form">
+                            <div>
+                                <input type="text" name="id" placeholder="Identifiant" id="signin_id" required>
+                                <input type="email" name="email" placeholder="E-mail" id="signin_mail" required>
+                                <input type="email" name="confirm" placeholder="Confirmer e-mail" id="signin_confirm" required>
+                                <input type="password" name="password" placeholder="Mot de passe" id="signin_password" required>
+
+                                <div class="field">
+                                    <label for="signin_date">Date de naissance: </label>
+                                    <input type="date" name="date" id="signin_date" required>
+                                </div>
+
+                                <div class="field">
+                                    <label for="signin_country">Pays: </label>
+                                    <select name="country" id="signin_country" required>
+                                        <option value="" selected>Choisir une option</option>
+                                        <option value="be">Belgique</option>
+                                        <option value="fr">France</option>
+                                        <option value="nl">Pays-Bas</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <input type="radio" name="sex" id="signin_sex_m" value="m" required>
+                                    <label for="signin_sex_m">Homme</label>
+
+                                    <input type="radio" name="sex" id="signin_sex_f" value="f" required>
+                                    <label for="signin_sex_f">Femme</label>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./img/fb-google-plus-sign-in.png" alt="fb-google-plus-lien">
+                            </div>
+                        </div>
+                        <div class="signin-button">
+                            <input type="checkbox" name="terms" id="signin_terms" required>
+                            <label for="signin_terms">J'accepte les <a href="#use-terms">Conditions d'utilisation</a> et la <a href="#privacy-policy">Politique de confidentialité</a> de ICBig.</label>
+                            <input type="image" src="./img/signUpBtn.jpg" alt="bouton_signup">
+                        </div>
+                    </fieldset>
+                </form>
+
+                <div id="content">
+                    <div class="how-to-play">
+                        <h1>Comment jouer?</h1>
+                        <div class="video"><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe></div>
+                    </div>
+                    <div class="ranking">
+                        <h1>Classement</h1>
+                        <p>Mise à jour automatique dans 15minutes.</p>
+                        <h2>Meilleurs scores</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="center">#</th>
+                                    <th class="center">Rank</th>
+                                    <th class="center">Pseudo</th>
+                                    <th class="center">Score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="top">
+                                <td rowspan="3" class="center bold">Top 3</td>
+                                <td>1</td>
+                                <td class="center">KillerPlayer</td>
+                                <td>7500</td>
+                            </tr>
+                            <tr class="top">
+                                <td>2</td>
+                                <td class="center">TheFan</td>
+                                <td>6500</td>
+                            </tr>
+                            <tr class="top">
+                                <td>3</td>
+                                <td class="center">HatMan</td>
+                                <td>6350</td>
+                            </tr>
+                            <tr>
+                                <td class="center bold up">&UpperRightArrow;</td>
+                                <td>4</td>
+                                <td class="center">Dillinger</td>
+                                <td>4000</td>
+                            </tr>
+                            <tr>
+                                <td class="center bold down">&LowerRightArrow;</td>
+                                <td>5</td>
+                                <td class="center">BillyBoy</td>
+                                <td>3995</td>
+                            </tr>
+                            <tr>
+                                <td class="center bold down">&LowerRightArrow;</td>
+                                <td>6</td>
+                                <td class="center">HopeLess</td>
+                                <td>3500</td>
+                            </tr>
+                            </tbody>
+                            <tfoot>
+                            <tr><td colspan="4" class="center">Last update: May 2017</td></tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div id="go-top">
+                    <a href="#"><img src="./img/top.png" alt="flèche_haut">Haut de page</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <ul class="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#dowload-now">Download Now</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <p>The purchase of a membership is not a licese to download copyrighted material. Please do your part and respect copyrights.</p>
+        </footer>
+        <script>
+            function changeText(elem, str1, str2) {
+                //Remplace la value de l'élément elem par str2 si elle vaut str1
+                if(elem.value==str1) elem.value = str2;
+            }
+        </script>
+    </body>
+</html>
